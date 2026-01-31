@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backoffice Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="backoffice.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <nav class="navbar bg-body-tertiary mb-4" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5">Backoffice Page</a>
+                <form class="d-flex mx-5" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <a href="index.html" class="btn btn-light ms-5 mb-3">
+            ← Go back to
+        </a>
+
+        <div class="container">
+            <form id="productForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="description">
+                </div>
+                <div class="mb-3">
+                    <label for="brand" class="form-label">Brand</label>
+                    <input type="text" class="form-control" id="brand">
+                </div>
+                <div class="mb-3">
+                    <label for="imageUrl" class="form-label">ImageUrl</label>
+                    <input type="text" class="form-control" id="imageUrl">
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="price">
+                </div>
+
+                <button type="submit" id="buttonSave" class="btn btn-success">Save</button>
+            </form>
+        </div>
+        <div class="container my-5">
+            <table>
+                <table class="table table-secondary table-striped" id="productsTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">ImageUrl</th>
+                            <th scope="col">Price</th>
+                            <th scope="col" class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results">
+
+                    </tbody>
+                </table>
+
+            </table>
+
+        </div>
+    </main>
+
+</body>
+
+
+</html>

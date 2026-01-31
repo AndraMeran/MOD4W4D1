@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-dark {
+    background-color: #000000;
+    color: white;
+    border: none;
+
+}
+
+
+.btn-dark:hover {
+    background-color: #e7a1ba;
+    color: white;
+
+}
+
+.btn-rosa {
+    background-color: #e7a1ba;
+    color: white;
+    border: none;
+
+}
+
+.btn-rosa:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/*CSS pagina backoffice*/
+.ellipsis {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*CSS pagina details.js*/
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+.thumb-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 6px;
+    border: 2px solid transparent;
+}
+
+.thumb-img.active,
+.thumb-img:hover {
+    border-color: #8c8c8c;
+}
+
+.stars .bi-star-fill {
+    color: #e7a1ba;
+}
+
+.stars .bi-star-half {
+    color: #e7a1ba;
+}
+
+.stars .bi-star {
+    color: lightgray;
+    /* stelle vuote grigie */
+}
+
+.info-extra {
+    color: #e7a1ba;
+}
