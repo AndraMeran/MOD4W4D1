@@ -4,7 +4,7 @@
 
 //pagina di dettaglio del backoffice
 //4- url search params per pagina di dettglio che deve avere il form  per modificare il prodotto (ricordarsi di fare la fetch per i dettagli per popolare il form)
-// 5- ogni riga della tabella deve avere il pulsante della cancellazione 
+// 5- ogni riga della tabella deve avere il pulsante della cancellazione e dettaglio che ci permette di editare 
 
 //
 // 6 - fare una pagina di e-commerce stile card con la lista dei prodotti 

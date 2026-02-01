@@ -1,3 +1,6 @@
+// url search params per pagina di dettglio che deve avere il form  per modificare il prodotto (ricordarsi di fare la fetch per i dettagli per popolare il form)
+
+
 const params = new URLSearchParams(location.search)
 const productId = params.get('id')
 

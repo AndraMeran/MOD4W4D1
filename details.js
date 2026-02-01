@@ -1,5 +1,4 @@
 //fare una funzione per richiamare api con la fetch
-//fare una funzione per richiamare la card del prodotto selezionato 
 
 const params = new URLSearchParams(location.search)
 const productId = params.get('id')

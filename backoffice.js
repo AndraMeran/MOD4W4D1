@@ -7,7 +7,6 @@ const imageUrlInput = document.getElementById('imageUrl')
 const priceInput = document.getElementById('price')
 const tableBody = document.getElementById('results')
 //console.log('TABLE BODY:', tableBody)
-const form = document.getElementById('productForm') //devo capire bene dove mettere form.rest()
 let products = []
 
 const button = document.getElementById('buttonSave')
@@ -38,7 +37,6 @@ button.addEventListener('click', async (event) => {
 })
 //funzione per eliminare un prodotto
 async function deleteProduct(productId) {
-    if (!confirm('Sei sicura di voler eliminare questo prodotto?')) return
     try {
         const response = await fetch(`https://striveschool-api.herokuapp.com/api/product/${productId}`,
             {
@@ -50,10 +48,10 @@ async function deleteProduct(productId) {
             }
         )
         if (response.ok) {
-            alert('Prodotto eliminato!')
+            alert('Product elimined!')
             getProducts() // qui aggiorno la tabella dopo aver cancellato un prodotto
         } else {
-            alert('Errore durante l\'eliminazione')
+            alert('Error')
         }
     } catch (error) {
         alert('Server not available')
@@ -105,6 +103,4 @@ async function getProducts() {
     arrayProducts(products)
 
 }
-
-
 getProducts()
