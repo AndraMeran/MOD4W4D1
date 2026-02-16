@@ -14,7 +14,7 @@ async function getProductsDetails() {
             `https://striveschool-api.herokuapp.com/api/product/${productId}`,
             {
                 headers: {
-                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTc5MjI4YmY1Y2I1ZDAwMTU0ZjQzNjQiLCJpYXQiOjE3Njk1NDYzNzksImV4cCI6MTc3MDc1NTk3OX0.y7dVaEUe7mcxwu9dcmSj40bxIz8HU_QwkSOEnCG5NJY",
+                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTc5MjI4YmY1Y2I1ZDAwMTU0ZjQzNjQiLCJpYXQiOjE3NzEyNjkyODQsImV4cCI6MTc3MjQ3ODg4NH0.0H3K1nWn3jZy_Y8YfbNMfjtKwMoqUgaDKsd1IV05xgQ",
                     'Content-Type': 'application/json'
                 }
             }
